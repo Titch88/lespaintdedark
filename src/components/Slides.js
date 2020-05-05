@@ -22,7 +22,17 @@ const Slides = () => {
   return (
     <Slide style={{ margin: 15 }} {...properties}>
       {images.map(image => (
-        <img style={{ height: '70vh' }} key="image" src={image} alt="" />
+        <img
+          style={{
+            height: '70vh',
+            display: 'block',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+          key="image"
+          src={image}
+          alt=""
+        />
       ))}
     </Slide>
   );
